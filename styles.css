@@ -697,8 +697,9 @@ h3 {
     transition: all var(--transition-normal);
 }
 
-.diff-card:nth-child(4) {
-    padding-right: calc(var(--spacing-lg) + 1rem);
+.diff-card:nth-child(4) .highlight {
+    font-size: 0.85em;           /* 15% menor que as outras */
+    letter-spacing: -0.02em;     /* Espaçamento negativo para comprimir levemente */
 }
 
 .diff-card:hover {
