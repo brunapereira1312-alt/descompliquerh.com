@@ -698,7 +698,7 @@ h3 {
 }
 
 .diff-card:nth-child(4) .highlight {
-    font-size: 0.60em;           /* 15% menor que as outras */
+    font-size: 0.70em;           /* 15% menor que as outras */
     letter-spacing: -0.02em;     /* Espaçamento negativo para comprimir levemente */
 }
 
