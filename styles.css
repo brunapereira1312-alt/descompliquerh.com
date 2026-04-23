@@ -690,11 +690,15 @@ h3 {
 
 .diff-card {
     background: var(--color-white);
-    padding: var(--spacing-lg);
+    padding: var(--spacing-lg) var(--spacing-lg) var(--spacing-lg) var(--spacing-lg);
     border-radius: var(--radius-md);
     box-shadow: var(--shadow-sm);
     position: relative;
     transition: all var(--transition-normal);
+}
+
+.diff-card:nth-child(4) {
+    padding-right: calc(var(--spacing-lg) + 1rem);
 }
 
 .diff-card:hover {
