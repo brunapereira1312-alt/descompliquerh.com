@@ -314,6 +314,29 @@ h3 {
     background: linear-gradient(135deg, var(--color-primary) 0%, #483D8B 100%);
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
     animation: blobFloat 6s infinite ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-logo {
+    width: 60%;
+    max-width: 300px;
+    height: auto;
+    opacity: 0;
+    animation: logoFadeIn 1s ease 0.5s forwards;
+    filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.2));
+}
+
+@keyframes logoFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 @keyframes blobFloat {
@@ -697,9 +720,8 @@ h3 {
     transition: all var(--transition-normal);
 }
 
-.diff-card:nth-child(4) .highlight {
-    font-size: 0.85em;           /* 12% menor que as outras */
-    letter-spacing: -0.02em;     /* Espaçamento negativo para comprimir levemente */
+.diff-card:nth-child(4) {
+    padding-right: calc(var(--spacing-lg) + 1rem);
 }
 
 .diff-card:hover {
@@ -732,6 +754,11 @@ h3 {
 
 .diff-card .highlight {
     color: var(--color-accent);
+}
+
+.diff-card:nth-child(4) .highlight {
+    font-size: 0.85em;
+    letter-spacing: -0.02em;
 }
 
 .diff-card p {
